@@ -35,9 +35,10 @@ public class JPACocheDao implements Dao<Coche>{
 			coche = it.next();
 			
 			if(coche.getId() == key) {
+				cocheBuscado=coche;
 				break;
 			}
-			cocheBuscado=coche;
+			
 		}
 		
 		
@@ -90,8 +91,6 @@ public class JPACocheDao implements Dao<Coche>{
 
 	@Override
 	public void delete(Coche t) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
